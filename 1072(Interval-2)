@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int a,s,count=0,cout=0,i;
+    scanf("%d",&a);
+    for(i=0; i<a; i++)
+    {
+        scanf("%d",&s);
+        if(s>=10 && s<=20)
+        {
+            count++;
+        }
+        else
+        {
+            cout++;
+        }
+    }
+    printf("%d in\n",count);
+    printf("%d out\n",cout);
+    return 0;
+}
