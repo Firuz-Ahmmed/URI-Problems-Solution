@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int i,max,a,d;
+    for(i=1;i<=100;i++)
+    {
+        scanf("%d",&a);
+        if(i==1)
+        {
+            max=a;
+        }
+        else
+        {
+            if(a>max)
+            {
+                max=a;
+                d=i;
+            }
+        }
+    }
+    printf("%d\n",max);
+    printf("%d\n",d);
+    return 0;
+}
