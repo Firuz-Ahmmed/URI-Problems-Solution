@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char arr[100],rev[100];
+    int a,l,m,k,i,n,f;
+    scanf("%d",&a);
+    while(a!=0)
+    {
+        scanf("%s",arr);
+        k=strlen(arr);
+        for(l=0; l<k; l++)
+        {
+            if((arr[l]>='a' && arr[l]<='z')||(arr[l]>='A' && arr[l]<='Z'))
+            {
+                arr[l]+=3;
+            }
+        }
+        n=0;
+        for(m=l-1; m>=0; m--)
+        {
+            rev[n]=arr[m];
+            n++;
+        }
+        rev[n]='\0';
+        f=k/2;
+        for(i=f; i<k; i++)
+        {
+            rev[i]=rev[i]-1;
+        }
+        printf("%s\n",rev);
+      a--;
+    }
+    return 0;
+}
